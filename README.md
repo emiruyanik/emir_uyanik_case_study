@@ -1,4 +1,5 @@
 Technologies Used
+
 Java 11 – Core programming language.
 
 Selenium WebDriver – Browser automation for UI testing.
