@@ -4,7 +4,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import utils.BrowserUtils;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,6 +29,9 @@ public class JobListingPage extends BasePage {
 
 	@FindBy(css = ".position-location.text-large")
 	private List<WebElement> positionLocations;
+
+	@FindBy(css = ".btn.btn-navy.rounded.pt-2")
+	private List<WebElement> viewRoleButtons;
 
 	public String getOpenAllPositionsHeaderText() {
 		return openAllPositionsHeader.getText();
@@ -73,6 +75,10 @@ public class JobListingPage extends BasePage {
 			locations.add(webElement.getText());
 		}
 		return locations;
+	}
+
+	public void clickViewRoleButton() {
+		viewRoleButtons.get(0).click();
 	}
 
 }
