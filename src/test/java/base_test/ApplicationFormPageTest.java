@@ -27,11 +27,11 @@ public class ApplicationFormPageTest extends Hooks {
 
 		// Scroll to view roles
 		BrowserUtils.scrollDownWithPageDown();
-		BrowserUtils.wait(1);
+		BrowserUtils.wait(2);
 
 		// Click on "View Role" button
 		pages.getJobListingPage().clickViewRoleButton();
-		BrowserUtils.wait(1);
+		BrowserUtils.wait(2);
 
 		// Handle new tab
 		Set<String> windowHandles = driver.getWindowHandles();

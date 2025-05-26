@@ -32,7 +32,7 @@ public class JobListingPageTest extends Hooks {
 
 		// Click to view all Quality Assurance job listings
 		pages.getQualityAssurancePage().clickSeeAllQAJobs();
-		BrowserUtils.wait(1);
+		BrowserUtils.wait(2);
 
 		// Apply filters: location and department
 		pages.getJobListingPage().selectLocationDropDown(expectedLocation);
@@ -40,7 +40,7 @@ public class JobListingPageTest extends Hooks {
 
 		// Scroll to ensure jobs are loaded
 		BrowserUtils.scrollDownWithPageDown();
-		BrowserUtils.wait(1);
+		BrowserUtils.wait(2);
 	}
 
 	/**
